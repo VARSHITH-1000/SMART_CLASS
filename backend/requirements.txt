@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-jose[cryptography]
+passlib[bcrypt]
+websockets
+opencv-python-headless
+mediapipe
+pydantic
+pydantic-settings
+redis
