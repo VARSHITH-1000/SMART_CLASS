@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Card, Button } from './ui';
+import { Card } from './ui/Card';
+import { Button } from './ui/Button';
+import { Input } from './ui/Input';
 import { Link } from 'react-router-dom';
 
 export default function StudentDashboard() {
@@ -14,10 +16,10 @@ export default function StudentDashboard() {
 
       <Card className="flex flex-col items-center p-8">
         <h3 className="text-2xl font-semibold mb-6">Join a Classroom</h3>
-        <input
+        <Input
           type="text"
           placeholder="Enter 8-digit Code"
-          className="bg-slate-800/50 border border-slate-700 rounded-lg p-3 w-64 text-center font-mono text-xl mb-6 focus:outline-none focus:border-emerald-500 transition-colors text-white"
+          className="w-64 text-center font-mono text-xl mb-6"
           value={joinCode}
           onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
         />
