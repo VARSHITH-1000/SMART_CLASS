@@ -20,11 +20,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-from backend.routers import users, analytics, ws_classroom
+from backend.routers import users, classrooms, sessions, analytics, ws_classroom, ai_assistant
 
 app.include_router(users.router)
+app.include_router(classrooms.router)
+app.include_router(sessions.router)
 app.include_router(analytics.router)
 app.include_router(ws_classroom.router)
+app.include_router(ai_assistant.router)
 
 @app.get("/")
 def read_root():

@@ -10,3 +10,4 @@ mediapipe
 pydantic
 pydantic-settings
 redis
+groq
